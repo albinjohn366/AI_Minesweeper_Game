@@ -131,31 +131,3 @@ class AI(Sentence):
         return guess
 
 
-if __name__ == '__main__':
-    pass
-    # cells = []
-    # game = Minesweeper()
-    # game.board_setting()
-    #
-    # while True:
-    #     if len(cells) == 30:
-    #         break
-    #     x = random.randint(0, 7)
-    #     y = random.randint(0, 7)
-    #     if (x, y) in game.mines:
-    #         continue
-    #     cells.append((x, y))
-    #
-    # sentence = AI(cells)
-    # game.print_board(cells, None)
-    #
-    # while True:
-    #     try:
-    #         sentence.operations()
-    #         print()
-    #         game.print_board(sentence.cells, sentence.mine_cell)
-    #         if game.mines == sentence.mine_cell:
-    #             print('You win')
-    #         break
-    #     except RecursionError:
-    #         sentence.guess()
